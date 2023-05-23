@@ -2,6 +2,10 @@
 import { BaseContainer } from '@/shared'
 import { BaseButton } from '@/shared'
 import { BaseFooter } from '@/widgets'
+import { IconProfile } from '@/shared'
+const testMethod = () => {
+  console.log('test')
+}
 </script>
 <template>
   <BaseContainer>
@@ -46,7 +50,28 @@ import { BaseFooter } from '@/widgets'
         </p>
       </div>
     </label>
-    <BaseButton class="dark:md:hover:bg-fuchsia-600 ...">Save changes</BaseButton>
+    <BaseButton
+      :size="'large'"
+      :icon="IconProfile"
+      :method="testMethod"
+      :type="'primary'"
+      text="Login or Sign Up"
+    />
+    <BaseButton
+      :size="'large'"
+      :icon="IconProfile"
+      :method="testMethod"
+      :type="'secondary'"
+      text="Login or Sign Up"
+    />
+    <BaseButton
+      :size="'large'"
+      :to="'/register'"
+      :icon="IconProfile"
+      :link="true"
+      :type="'primary'"
+    />
+
     <BaseFooter />
   </BaseContainer>
 </template>

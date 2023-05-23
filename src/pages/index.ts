@@ -1,4 +1,5 @@
 import type { RouteRecordRaw } from 'vue-router'
+import RegisterPage from './register/ui/RegisterPage.vue'
 
 export const routes: Array<RouteRecordRaw> = [
   {

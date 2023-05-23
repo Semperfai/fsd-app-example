@@ -9,7 +9,11 @@ module.exports = {
       fontFamily: {
         sans: ['Lexend', ...defaultTheme.fontFamily.sans]
       },
-      colors: {}
+      colors: {
+        'primary-1': '#10B981',
+        'primary-2': '#F5F5F5',
+        'dark-1': '#18181B'
+      }
     }
   },
   plugins: []
