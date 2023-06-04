@@ -8,3 +8,12 @@ html,
 body {
   overflow-x: hidden;
 }
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-1 border  border-primary-1  shadow-primary text-white  hover:bg-primary-2 hover:border hover:border-primary-1;
+  }
+  .btn-secondary {
+    @apply bg-primary-2  text-slate-950 border  border-primary-1  hover:bg-primary-1 hover:border hover:border-primary-1  hover:text-white;
+  }
+}

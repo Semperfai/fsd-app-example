@@ -1,7 +1,6 @@
 import type { Component } from 'vue'
-
 export interface Props {
-  type: 'primary' | 'secondary' | 'tertiary'
+  variant: 'primary' | 'secondary' | 'custom'
   size: 'small' | 'medium' | 'large'
   disabled: boolean
   text: string
