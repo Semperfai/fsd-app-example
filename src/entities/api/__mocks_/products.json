@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "price": 20,
+    "name": "Boat Rockerz 333",
+    "discountPercentage": 60,
+    "starRating": 5,
+    "describe": "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a product ... Read More",
+    "reviewes": 75,
+    "imgUrl": "https://res.cloudinary.com/dnenvhtxp/image/upload/v1686155639/app-shopper/image_12_sxeehq.png"
+  },
+  {
+    "id": 2,
+    "price": 40,
+    "name": "Boat kerz 234",
+    "discountPercentage": 0,
+    "starRating": 4.5,
+    "describe": "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a product ... Read More",
+    "reviewes": 45,
+    "imgUrl": "https://res.cloudinary.com/dnenvhtxp/image/upload/v1686155627/app-shopper/image_13_ptm1jk.png"
+  },
+  {
+    "id": 3,
+    "price": 30,
+    "name": "Boat Rockerz 323",
+    "discountPercentage": 40,
+    "starRating": 3.5,
+    "describe": "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a product ... Read More",
+    "reviewes": 55,
+    "imgUrl": "https://res.cloudinary.com/dnenvhtxp/image/upload/v1686155615/app-shopper/image_14_dr6rab.png"
+  },
+  {
+    "id": 4,
+    "price": 23.5,
+    "name": "Boat Rockerz 333",
+    "discountPercentage": 60,
+    "starRating": 5,
+    "describe": "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a product ... Read More",
+    "reviewes": 75,
+    "imgUrl": "https://res.cloudinary.com/dnenvhtxp/image/upload/v1686155599/app-shopper/image_15_cpinis.png"
+  },
+  {
+    "id": 5,
+    "price": 20,
+    "name": "Boat Rockerz 333",
+    "discountPercentage": 45,
+    "starRating": 4.5,
+    "describe": "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a product ... Read More",
+    "reviewes": 215,
+    "imgUrl": "https://res.cloudinary.com/dnenvhtxp/image/upload/v1686155607/app-shopper/image_16_z7njwx.png"
+  }
+]

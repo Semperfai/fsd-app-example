@@ -1,6 +1,7 @@
 import { ref, computed } from 'vue'
+import { type Breakpoints } from '@/shared/types'
 
-export const useBreakpoints = () => {
+export const useBreakpoints = (): Breakpoints => {
   const viewportWidth = ref(window.innerWidth)
 
   window.addEventListener('resize', () => {

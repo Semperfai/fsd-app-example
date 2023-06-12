@@ -1,22 +1,23 @@
 <script setup lang="ts">
 import { type Props } from './types'
-withDefaults(defineProps<Partial<Props>>(), {})
+defineProps<Partial<Props>>()
 </script>
 <template>
   <button class="relative h-8 w-9 bg-transparent">
     <span
-      class="absolute w-full top-1/2 -translate-y-[calc(50%+6px)] left-0 h-1 bg-black rounded-sm transition-transform"
-      :class="[open ? ' -translate-y-[calc(25%-1px)] rotate-45' : '']"
+      aria-hidden="true"
+      class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+      :class="{ 'rotate-45': open, ' -translate-y-1.5': !open }"
     ></span>
     <span
-      class="absolute w-full top-1/2 left-0 h-1 bg-black rounded-sm transition-transform"
-      :class="[open ? ' translate-y-0 scale-x-0' : '']"
+      aria-hidden="true"
+      class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+      :class="{ 'opacity-0': open }"
     ></span>
     <span
-      class="absolute w-full top-1/2 -translate-y-[calc(50%-10px)] left-0 h-1 bg-black rounded-sm transition-transform"
-      :class="[open ? '  translate-y-[calc(25%+-1px)]  -rotate-45' : '']"
+      aria-hidden="true"
+      class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+      :class="{ '-rotate-45': open, ' translate-y-1.5': !open }"
     ></span>
   </button>
 </template>
-
-<style scoped></style>

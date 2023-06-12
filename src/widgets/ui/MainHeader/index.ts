@@ -1,2 +1,2 @@
-import MainHeader from './MainHeader.vue'
+import { MainHeader } from './ui'
 export { MainHeader }

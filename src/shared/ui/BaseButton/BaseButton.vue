@@ -4,7 +4,6 @@ import { type Props } from './types'
 import { ref } from 'vue'
 
 const buttonId = ref(generateUniqueID('button'))
-
 withDefaults(defineProps<Partial<Props>>(), {
   variant: 'primary',
   to: '#'
