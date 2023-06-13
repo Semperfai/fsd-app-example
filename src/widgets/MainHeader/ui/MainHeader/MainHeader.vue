@@ -35,7 +35,7 @@ onMounted(() => {
 </script>
 <template>
   <BaseContainer>
-    <div class="flex justify-between items-center py-16">
+    <div class="flex justify-between items-center lg:py-16 py-8">
       <a href="/">
         <IconBrandLogo class="lg:w-max w-28" />
       </a>

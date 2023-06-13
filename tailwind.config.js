@@ -16,8 +16,8 @@ module.exports = {
         'base-inp-ph': 'rgba(41, 41, 48, 0.2)'
       },
       boxShadow: {
-        primary: '0px 25px 50px 0px #FFFFFF1A'
-      }
+        primary: '0px 25px 50px 0px #FFFFFF1A',
+      },
     }
   },
   plugins: []

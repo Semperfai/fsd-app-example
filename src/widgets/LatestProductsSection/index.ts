@@ -1,0 +1,1 @@
+export { LatestProductSection} from './ui'
