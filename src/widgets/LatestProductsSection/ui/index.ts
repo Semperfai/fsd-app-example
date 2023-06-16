@@ -1,1 +1,2 @@
-export * from './LatestProductSection'
+import LatestProductSection from './LatestProductSection/LatestProductSection.vue'
+export { LatestProductSection }

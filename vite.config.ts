@@ -8,7 +8,8 @@ export default defineConfig({
   plugins: [
     vue({
       script: {
-        defineModel: true
+        defineModel: true,
+        propsDestructure: true
       }
     })
   ],

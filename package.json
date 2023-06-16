@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@shimyshack/uid": "^0.1.7",
+    "aos": "^2.3.4",
     "msw": "^1.2.1",
     "pinia": "^2.0.36",
     "uuid": "^9.0.0",

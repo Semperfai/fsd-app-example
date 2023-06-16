@@ -18,6 +18,9 @@ module.exports = {
       boxShadow: {
         primary: '0px 25px 50px 0px #FFFFFF1A',
       },
+      backgroundColor:{
+        'latest-product':  '#ECFEF4'
+      }
     }
   },
   plugins: []
