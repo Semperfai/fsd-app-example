@@ -1,5 +1,12 @@
 <script setup lang="ts">
-const playVideo = (): void => {}
+import { generateUniqueID } from '@/shared/lib/helpers/generateUniqueId'
+import { type Props } from './types'
+import { ref } from 'vue'
+const buttonId = ref(generateUniqueID('button'))
+withDefaults(defineProps<Partial<Props>>(), {
+  text: 'Play Video',
+})
+defineEmits(['click'])
 </script>
 <template>
   <div class="mb-14 flex flex-col flex-[1_1_20%] self-end justify-center items-center">
@@ -10,7 +17,7 @@ const playVideo = (): void => {}
         alt="play-video"
       />
     </div>
-    <button class="text-xl" @click="playVideo">Play Video</button>
+    <button :disabled="disabled" :id="buttonId" @click="method" class="text-xl">{{ text }}</button>
   </div>
 </template>
 <style scoped></style>

@@ -15,6 +15,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@mswjs/data": "github:noveogroup-amorgunov/mswjs-data#feat-persist",
     "@shimyshack/uid": "^0.1.7",
     "aos": "^2.3.4",
     "msw": "^1.2.1",

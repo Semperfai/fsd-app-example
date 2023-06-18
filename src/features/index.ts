@@ -1,1 +1,1 @@
-export * from './ReviewsCounter'
+export * from './video/videoViewer'
