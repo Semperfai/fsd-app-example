@@ -18,6 +18,7 @@
     "@mswjs/data": "github:noveogroup-amorgunov/mswjs-data#feat-persist",
     "@shimyshack/uid": "^0.1.7",
     "aos": "^2.3.4",
+    "axios": "^1.4.0",
     "msw": "^1.2.1",
     "pinia": "^2.0.36",
     "uuid": "^9.0.0",
@@ -50,5 +51,8 @@
     "vite": "^4.3.5",
     "vitest": "^0.31.0",
     "vue-tsc": "^1.6.4"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

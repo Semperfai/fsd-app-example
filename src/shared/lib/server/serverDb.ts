@@ -4,14 +4,14 @@ export const db = factory({
   user: {
     id: primaryKey(Number),
     email: String,
-    password: String,
+    password: String
   },
   cart: {
     id: primaryKey(Number),
     user: oneOf('user'),
     version: Number,
     itemsProductId: (): number[] => [],
-    itemsProductQuantity: (): number[] => [],
+    itemsProductQuantity: (): number[] => []
   },
   product: {
     id: primaryKey(Number),
@@ -23,16 +23,16 @@ export const db = factory({
     price: Number,
     discountPercentage: Number,
     reviewes: Number,
-    imageUrl: (): string[] => [],
+    imgUrl: (): string[] => [],
     videoPresentationUrls: {
       poster: String,
       mp4: String,
       ogv: String,
-      webm: String,
-    },
+      webm: String
+    }
   }
 })
 
 persist(db, {
-  storage: config.API_STORAGE_MODE === 'local' ? localStorage : sessionStorage,
+  storage: config.API_STORAGE_MODE === 'local' ? localStorage : sessionStorage
 })

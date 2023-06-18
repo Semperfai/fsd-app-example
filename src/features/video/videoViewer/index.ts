@@ -1,2 +1,2 @@
-import VideViewer from './ui/VideoViewer/VideoViewer.vue';
-export {VideViewer}
+import VideViewer from './ui/VideoViewer/VideoViewer.vue'
+export { VideViewer }

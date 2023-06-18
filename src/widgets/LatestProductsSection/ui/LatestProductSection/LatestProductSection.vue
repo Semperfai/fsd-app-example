@@ -32,7 +32,7 @@ const testCircularText = ref<string>('Read Beats Ml9c2zm/a')
         </div>
         <div class="h-auto flex flex-[1_1_40%]">
           <div class="flex w-full justify-between items-center">
-            <VideViewer/>
+            <VideViewer />
             <IconStar class="self-start" />
             <div
               class="relative flex h-4/5 flex-col bg-latest-product items-center justify-center rounded-[136px]"

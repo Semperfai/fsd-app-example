@@ -4,7 +4,7 @@ import { type Props } from './types'
 import { ref } from 'vue'
 const buttonId = ref(generateUniqueID('button'))
 withDefaults(defineProps<Partial<Props>>(), {
-  text: 'Play Video',
+  text: 'Play Video'
 })
 defineEmits(['click'])
 </script>
@@ -13,7 +13,7 @@ defineEmits(['click'])
     <div class="relative overflow-hidden mb-5 w-20 h-20 rounded-full">
       <img
         class="absolute top-0 left-0 w-full h-full object-cover"
-        src="./assets/images/videoimg (2).png"
+        src="./__tmp_assets/videoimg (2).png"
         alt="play-video"
       />
     </div>

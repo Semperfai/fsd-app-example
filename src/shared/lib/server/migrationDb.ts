@@ -12,7 +12,7 @@ export function startDatabaseMigration() {
   const user = db.user.create({
     id: 1,
     email: config.API_USER_EMAIL,
-    password: config.API_USER_PASSWORD,
+    password: config.API_USER_PASSWORD
   })
 
   productsMock.forEach((row) => db.product.create(row))
@@ -22,6 +22,6 @@ export function startDatabaseMigration() {
     user,
     version: 0,
     itemsProductId: [],
-    itemsProductQuantity: [],
+    itemsProductQuantity: []
   })
 }
