@@ -4,7 +4,8 @@ import { BurgerButton } from '@/shared'
 import { IconBrandLogo } from '@/shared'
 import { ResponsiveNavbar } from '@/widgets'
 import { HeaderMenu } from '../HeaderMenu'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
+import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints'
 
 const respNavbar = ref<any>(null)
 const burgerBtn = ref<any>(null)
@@ -31,6 +32,14 @@ onMounted(() => {
   return (): void => {
     document.removeEventListener('click', handleOutsideClick)
   }
+})
+const breakpoints = useBreakpoints()
+watch([open, breakpoints], ([open, breakpoints]) => {
+  if (open && !breakpoints.isLg) {
+    return (document.body.style.overflow = 'hidden')
+  }
+
+  document.body.style.overflow = 'auto'
 })
 </script>
 <template>

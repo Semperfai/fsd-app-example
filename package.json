@@ -17,6 +17,7 @@
   "dependencies": {
     "@mswjs/data": "github:noveogroup-amorgunov/mswjs-data#feat-persist",
     "@shimyshack/uid": "^0.1.7",
+    "@vueuse/core": "^10.2.0",
     "aos": "^2.3.4",
     "axios": "^1.4.0",
     "msw": "^1.2.1",

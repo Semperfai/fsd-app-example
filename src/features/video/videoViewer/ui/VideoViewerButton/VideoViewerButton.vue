@@ -9,15 +9,19 @@ withDefaults(defineProps<Partial<Props>>(), {
 defineEmits(['click'])
 </script>
 <template>
-  <div class="mb-14 flex flex-col flex-[1_1_20%] self-end justify-center items-center">
-    <div class="relative overflow-hidden mb-5 w-20 h-20 rounded-full">
+  <div
+    class="flex flex-col flex-[1_1_20%] self-end justify-center items-center animate-bounce sm:animate-none"
+  >
+    <div class="relative overflow-hidden lg:mb-5 mb-3 lg:w-20 lg:h-20 w-16 h-16 rounded-full">
       <img
         class="absolute top-0 left-0 w-full h-full object-cover"
         src="./__tmp_assets/videoimg (2).png"
         alt="play-video"
       />
     </div>
-    <button :disabled="disabled" :id="buttonId" @click="method" class="text-xl">{{ text }}</button>
+    <button :disabled="disabled" :id="buttonId" @click="method" class="text-sm lg:text-xl">
+      {{ text }}
+    </button>
   </div>
 </template>
 <style scoped></style>
