@@ -6,11 +6,11 @@ const buttonId = ref(generateUniqueID('button'))
 withDefaults(defineProps<Partial<Props>>(), {
   text: 'Play Video'
 })
-defineEmits(['click'])
 </script>
 <template>
-  <div
-    class="flex flex-col flex-[1_1_20%] self-end justify-center items-center animate-bounce sm:animate-none"
+  <label
+    :for="buttonId"
+    class="flex flex-col flex-[1_1_20%] self-end justify-center items-center animate-bounce sm:animate-none cursor-pointer"
   >
     <div class="relative overflow-hidden lg:mb-5 mb-3 lg:w-20 lg:h-20 w-16 h-16 rounded-full">
       <img
@@ -19,9 +19,9 @@ defineEmits(['click'])
         alt="play-video"
       />
     </div>
-    <button :disabled="disabled" :id="buttonId" @click="method" class="text-sm lg:text-xl">
+    <button :disabled="disabled" :id="buttonId" class="text-sm lg:text-xl">
       {{ text }}
     </button>
-  </div>
+  </label>
 </template>
 <style scoped></style>

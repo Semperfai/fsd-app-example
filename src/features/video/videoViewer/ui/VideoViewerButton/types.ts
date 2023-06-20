@@ -3,5 +3,4 @@ export interface Props {
   text: string
   link: boolean
   poster: string
-  method: (payload: MouseEvent) => void
 }

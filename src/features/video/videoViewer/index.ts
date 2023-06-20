@@ -1,2 +1,4 @@
-import VideoViewer from './ui/VideoViewer/VideoViewer.vue'
-export { VideoViewer }
+import VideoViewerPlayer from './ui/VideoViewerPlayer/VideoViewerPlayer.vue'
+import VideoViewerButton from './ui/VideoViewerButton/VideoViewerButton.vue'
+
+export { VideoViewerPlayer, VideoViewerButton }
