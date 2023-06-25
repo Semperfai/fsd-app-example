@@ -11,13 +11,28 @@
     "description": "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a product ... Read More",
     "reviewes": 75,
     "imgUrl": [
-      "https://res.cloudinary.com/dnenvhtxp/image/upload/v1686155639/app-shopper/image_12_sxeehq.png"
+      "https://res.cloudinary.com/dnenvhtxp/image/upload/v1687633014/posters/Drone-Grand-Tour-Tustan-Karpaty-mountains_xezkkt.jpg"
     ],
-    "videoPresentationUrls": {
-      "poster": "https://res.cloudinary.com/dnenvhtxp/image/upload/v1687108768/posters/videoimg_2_qyvw7f.png",
-      "mp4": "https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4",
-      "ogv": "https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv",
-      "webm": "https://archive.org/download/WebmVp8Vorbis/webmvp8.webm"
+    "videoPresentationSrc": {
+      "src": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f1/Sintel_movie_4K.webm/Sintel_movie_4K.webm.1080p.vp9.webm",
+        "type": "video/webm"
+      },
+      "tracks": [
+        {
+          "default": true,
+          "src": "https://gist.githubusercontent.com/wheatjs/a85a65a82d87d7c098e1a0972ef1f726/raw",
+          "kind": "subtitles",
+          "label": "English",
+          "srcLang": "en"
+        },
+        {
+          "src": "https://gist.githubusercontent.com/wheatjs/38f32925d20c683bf77ba33ff737891b/raw",
+          "kind": "subtitles",
+          "label": "French",
+          "srcLang": "fr"
+        }
+      ]
     }
   },
   {
@@ -34,11 +49,26 @@
     "imgUrl": [
       "https://res.cloudinary.com/dnenvhtxp/image/upload/v1686155627/app-shopper/image_13_ptm1jk.png"
     ],
-    "videoPresentationUrls": {
-      "poster": "https://res.cloudinary.com/dnenvhtxp/image/upload/v1687108768/posters/videoimg_2_qyvw7f.png",
-      "mp4": "https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4",
-      "ogv": "https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv",
-      "webm": "https://archive.org/download/WebmVp8Vorbis/webmvp8.webm"
+    "videoPresentationSrc": {
+      "src": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f1/Sintel_movie_4K.webm/Sintel_movie_4K.webm.1080p.vp9.webm",
+        "type": "video/webm"
+      },
+      "tracks": [
+        {
+          "default": true,
+          "src": "https://gist.githubusercontent.com/wheatjs/a85a65a82d87d7c098e1a0972ef1f726/raw",
+          "kind": "subtitles",
+          "label": "English",
+          "srcLang": "en"
+        },
+        {
+          "src": "https://gist.githubusercontent.com/wheatjs/38f32925d20c683bf77ba33ff737891b/raw",
+          "kind": "subtitles",
+          "label": "French",
+          "srcLang": "fr"
+        }
+      ]
     }
   },
   {
@@ -55,11 +85,26 @@
     "imgUrl": [
       "https://res.cloudinary.com/dnenvhtxp/image/upload/v1686155615/app-shopper/image_14_dr6rab.png"
     ],
-    "videoPresentationUrls": {
-      "poster": "https://res.cloudinary.com/dnenvhtxp/image/upload/v1687108768/posters/videoimg_2_qyvw7f.png",
-      "mp4": "https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4",
-      "ogv": "https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv",
-      "webm": "https://archive.org/download/WebmVp8Vorbis/webmvp8.webm"
+    "videoPresentationSrc": {
+      "src": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f1/Sintel_movie_4K.webm/Sintel_movie_4K.webm.1080p.vp9.webm",
+        "type": "video/webm"
+      },
+      "tracks": [
+        {
+          "default": true,
+          "src": "https://gist.githubusercontent.com/wheatjs/a85a65a82d87d7c098e1a0972ef1f726/raw",
+          "kind": "subtitles",
+          "label": "English",
+          "srcLang": "en"
+        },
+        {
+          "src": "https://gist.githubusercontent.com/wheatjs/38f32925d20c683bf77ba33ff737891b/raw",
+          "kind": "subtitles",
+          "label": "French",
+          "srcLang": "fr"
+        }
+      ]
     }
   },
   {
@@ -76,11 +121,26 @@
     "imgUrl": [
       "https://res.cloudinary.com/dnenvhtxp/image/upload/v1686155599/app-shopper/image_15_cpinis.png"
     ],
-    "videoPresentationUrls": {
-      "poster": "https://res.cloudinary.com/dnenvhtxp/image/upload/v1687108768/posters/videoimg_2_qyvw7f.png",
-      "mp4": "https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4",
-      "ogv": "https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv",
-      "webm": "https://archive.org/download/WebmVp8Vorbis/webmvp8.webm"
+    "videoPresentationSrc": {
+      "src": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f1/Sintel_movie_4K.webm/Sintel_movie_4K.webm.1080p.vp9.webm",
+        "type": "video/webm"
+      },
+      "tracks": [
+        {
+          "default": true,
+          "src": "https://gist.githubusercontent.com/wheatjs/a85a65a82d87d7c098e1a0972ef1f726/raw",
+          "kind": "subtitles",
+          "label": "English",
+          "srcLang": "en"
+        },
+        {
+          "src": "https://gist.githubusercontent.com/wheatjs/38f32925d20c683bf77ba33ff737891b/raw",
+          "kind": "subtitles",
+          "label": "French",
+          "srcLang": "fr"
+        }
+      ]
     }
   },
   {
@@ -97,11 +157,26 @@
     "imgUrl": [
       "https://res.cloudinary.com/dnenvhtxp/image/upload/v1686155607/app-shopper/image_16_z7njwx.png"
     ],
-    "videoPresentationUrls": {
-      "poster": "https://res.cloudinary.com/dnenvhtxp/image/upload/v1687108768/posters/videoimg_2_qyvw7f.png",
-      "mp4": "https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4",
-      "ogv": "https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv",
-      "webm": "https://archive.org/download/WebmVp8Vorbis/webmvp8.webm"
+    "videoPresentationSrc": {
+      "src": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f1/Sintel_movie_4K.webm/Sintel_movie_4K.webm.1080p.vp9.webm",
+        "type": "video/webm"
+      },
+      "tracks": [
+        {
+          "default": true,
+          "src": "https://gist.githubusercontent.com/wheatjs/a85a65a82d87d7c098e1a0972ef1f726/raw",
+          "kind": "subtitles",
+          "label": "English",
+          "srcLang": "en"
+        },
+        {
+          "src": "https://gist.githubusercontent.com/wheatjs/38f32925d20c683bf77ba33ff737891b/raw",
+          "kind": "subtitles",
+          "label": "French",
+          "srcLang": "fr"
+        }
+      ]
     }
   }
 ]

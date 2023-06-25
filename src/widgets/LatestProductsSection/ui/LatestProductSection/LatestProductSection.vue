@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { BaseButton } from '@/shared'
+import { Spinner } from '@/shared'
 import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints'
 import { VideoViewerButton } from '@/features'
 import { VideoViewerPlayer } from '@/features'
@@ -47,6 +48,17 @@ const show = ref(false)
         <LatestProductCard />
       </template>
     </LatestProductSectionLayout>
-    <VideoViewerPlayer v-if="show" />
+    <template v-if="show">
+      <Transition mode="out-in">
+        <Suspense>
+          <component :is="VideoViewerPlayer"></component>
+          <template #fallback>
+            <div class="fixed grid justify-center content-center inset-0 bg-black opacity-75">
+              <Spinner />
+            </div>
+          </template>
+        </Suspense>
+      </Transition>
+    </template>
   </section>
 </template>

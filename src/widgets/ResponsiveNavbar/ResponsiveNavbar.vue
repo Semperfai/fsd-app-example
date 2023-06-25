@@ -5,7 +5,7 @@ import { IconShoppingCart } from '@/shared'
 import { ButtonClose } from './ui'
 import { BaseButton } from '@/shared'
 import { BaseInput } from '@/shared'
-import { navlinksMock } from './_mocks_'
+import { navlinksMock } from './__mocks__'
 import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints'
 import { type Props } from './types'
 

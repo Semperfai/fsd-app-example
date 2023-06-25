@@ -24,11 +24,12 @@ export const db = factory({
     discountPercentage: Number,
     reviewes: Number,
     imgUrl: (): string[] => [],
-    videoPresentationUrls: {
-      poster: String,
-      mp4: String,
-      ogv: String,
-      webm: String
+    videoPresentationSrc: {
+      src: {
+        src: String,
+        type: String
+      },
+      tracks: Array
     }
   }
 })

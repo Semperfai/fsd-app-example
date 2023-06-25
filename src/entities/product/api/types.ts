@@ -9,5 +9,19 @@ export type ProductDto = Partial<{
   description: string
   reviewes: number
   imgUrl: string[]
-  videoPresentationUrls: Record<string, string>
+  videoPresentationSrc: VideoPresentationSrc
 }>
+
+export interface VideoPresentationSrc {
+  src: {
+    src: string
+    type: string
+  }
+  tracks: {
+    default?: boolean
+    src: string
+    kind: string
+    label: string
+    srcLang: string
+  }[]
+}
