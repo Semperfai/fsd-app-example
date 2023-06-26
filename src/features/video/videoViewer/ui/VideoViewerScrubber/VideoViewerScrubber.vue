@@ -35,11 +35,11 @@ watch([scrubbing, elementX], () => {
   >
     <div class="relative overflow-hidden h-full w-full rounded">
       <div
-        class="h-full absolute opacity-30 left-0 top-0 bg-emerald-700 w-full rounded"
+        class="h-full absolute opacity-30 left-0 top-0 bg-green-600 hover:bg-green-800 w-full rounded"
         :style="{ transform: `translateX(${(secondary / max) * 100 - 100}%)` }"
       />
       <div
-        class="relative h-full w-full bg-emerald-500 rounded"
+        class="relative h-full w-full bg-green-600 hover:bg-green-800 rounded"
         :style="{ transform: `translateX(${(value / max) * 100 - 100}%)` }"
       />
     </div>

@@ -4,8 +4,8 @@ import { apiInstance } from '@/shared/api/local'
 
 const BASE_URL = 'products'
 
-export const getProductsList = (params: any): AxiosPromise<ProductDto[]> => {
-  return apiInstance.get(BASE_URL, { params })
+export const getProductsList = (params: any):AxiosPromise<ProductDto[]> =>  {
+  return  apiInstance.get(BASE_URL, { params })
 }
 
 export type GetProductByIdParams = {

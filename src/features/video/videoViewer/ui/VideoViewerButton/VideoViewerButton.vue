@@ -15,7 +15,7 @@ withDefaults(defineProps<Partial<Props>>(), {
     <div class="relative overflow-hidden lg:mb-5 mb-3 lg:w-20 lg:h-20 w-16 h-16 rounded-full">
       <img
         class="absolute top-0 left-0 w-full h-full object-cover"
-        src="./assets/videoimg (2).png"
+        src="./assets/videobtnimg.png"
         alt="play-video"
       />
     </div>

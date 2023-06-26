@@ -2,6 +2,11 @@
 import VideoViewerMenuScrubber from '../VideoViewerScrubber/VideoViewerScrubber.vue'
 import VideoViewerMenuItem from '../VideoViewerMenuItem/VideoViewerMenuItem.vue'
 import VideoViewerMenu from '../VideoViewerMenu/VideoViewerMenu.vue'
+import { IconPlay } from '@/shared'
+import { IconPause } from '@/shared'
+import { IconVolumeMute } from '@/shared'
+import { IconSettings } from '@/shared'
+import { IconVolumeUnmute } from '@/shared'
 import { Spinner } from '@/shared'
 import { computed, ref } from 'vue'
 import { useMediaControls } from '@vueuse/core'
@@ -13,8 +18,8 @@ const loop = ref(false)
 const poster = ref<string>('')
 const videoProductPresentation = ref()
 
-const response = await getProductById({ productId: 1 })
-const { videoPresentationSrc, imgUrl } = response.data
+const { data: { videoPresentationSrc , imgUrl}} = await getProductById({ productId: 1 })
+
 videoProductPresentation.value = videoPresentationSrc
 
 if (imgUrl && imgUrl.length > 0) {
@@ -42,14 +47,13 @@ const endBuffer = computed(() =>
 </script>
 <template>
   <div
-    class="fixed grid justify-center content-center inset-0 bg-black opacity-75"
     :tabindex="0"
     autofocus
     @keydown.prevent.space="playing = !playing"
     @keydown.right="currentTime += 10"
     @keydown.left="currentTime -= 10"
-  ></div>
-  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+  >
+  <div class="p-5 rounded-md bg-gray-700 absolute w-3/4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
     <video
       class="w-full m-auto"
       ref="video"
@@ -69,7 +73,7 @@ const endBuffer = computed(() =>
       v-model="currentTime"
       :max="duration"
       :secondary="endBuffer"
-      class="mt-2"
+      class="my-2"
     >
       <template #default="{ position, pendingValue }">
         <div
@@ -81,23 +85,23 @@ const endBuffer = computed(() =>
       </template>
     </VideoViewerMenuScrubber>
 
-    <div class="flex flex-row items-center">
+    <div class="flex flex-row justify-between items-center gap-3">
       <button @click="playing = !playing">
-        <i v-if="!playing" inline-block align-middle>▶️</i>
-        <i v-else inline-block align-middle>⏸️</i>
+          <IconPlay  v-if="!playing" class="w-6 md:w-7 lg:w-9" />
+          <IconPause class="w-6 md:w-7 lg:w-9" v-else />
       </button>
       <button @click="muted = !muted">
-        <i v-if="muted" inline-block align-middle>Volume mute</i>
-        <i v-else inline-block align-middle>Volume up</i>
+          <IconVolumeMute v-if="muted" class="w-6 md:w-7 lg:w-9" />
+          <IconVolumeUnmute class="w-6 md:w-7 lg:w-9" v-else />
       </button>
       <VideoViewerMenuScrubber v-model="volume" :max="1" class="w-32 ml-2" />
-      <div class="flex flex-col flex-1 text-sm ml-2 text-white">
+      <div class="flex-col flex-1 text-sm ml-2 text-white hidden sm:flex">
         {{ formatDuration(currentTime) }} / {{ formatDuration(duration) }}
       </div>
 
       <VideoViewerMenu class="mr-2">
         <template #default="{ open }">
-          <button @click="open">Open</button>
+          <button @click="open"><IconSettings class="w-6 md:w-7 lg:w-9" /></button>
         </template>
         <template #menu="{ close }">
           <div class="absolute bottom-0 right-0 bg-black rounded py-2 shadow">
@@ -125,13 +129,12 @@ const endBuffer = computed(() =>
               "
             >
               <span class="flex-1">{{ track.label }}</span>
-              <i inline-block align-middle :class="{ 'opacity-0': track.mode !== 'showing' }"
-                >✔️</i
-              >
+              <i inline-block align-middle :class="{ 'opacity-0': track.mode !== 'showing' }">✔️</i>
             </VideoViewerMenuItem>
           </div>
         </template>
       </VideoViewerMenu>
     </div>
   </div>
+</div>
 </template>

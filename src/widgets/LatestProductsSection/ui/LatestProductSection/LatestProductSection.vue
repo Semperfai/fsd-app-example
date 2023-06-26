@@ -7,16 +7,20 @@ import { VideoViewerPlayer } from '@/features'
 import LatestProductCard from '../LatestProductCard/LatestProductCard.vue'
 import LatestProductSectionLayout from '../LatestProductSectionLayout/LatestProductSectionLayout.vue'
 import { ref } from 'vue'
-const testDescribeSection = {
-  title: 'Discover Our Latest Products',
-  subtitle:
-    'Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a product'
-}
+import { onClickOutside } from '@vueuse/core'
+
+const show = ref(false)
+const videoViewerPlayerRef = ref(null)
+
 const breakpoints = useBreakpoints()
+
+onClickOutside(videoViewerPlayerRef, () => {
+  show.value = !show.value
+})
+
 const playVideo = () => {
   show.value = !show.value
 }
-const show = ref(false)
 </script>
 <template>
   <section class="py-16">
@@ -25,10 +29,10 @@ const show = ref(false)
         <h1
           class="lg:mb-8 mb-5 lg:text-6xl sm:text-3xl text-2xl font-semibold [text-shadow:_0_4px_4px_rgb(0_0_0_/_40%)]"
         >
-          {{ testDescribeSection.title }}
+        Discover Our Latest Products
         </h1>
         <p class="lg:mb-14 mb-8 lg:text-2xl md:text-xl text-sm">
-          {{ testDescribeSection.subtitle }}
+          Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a product 
         </p>
       </template>
       <template #action>
@@ -51,7 +55,7 @@ const show = ref(false)
     <template v-if="show">
       <Transition mode="out-in">
         <Suspense>
-          <component :is="VideoViewerPlayer"></component>
+            <component ref="videoViewerPlayerRef" :is="VideoViewerPlayer" />
           <template #fallback>
             <div class="fixed grid justify-center content-center inset-0 bg-black opacity-75">
               <Spinner />

@@ -10,10 +10,10 @@ useEventListener('keydown', (e) => {
   if (e.key === 'Escape' && isOpen) isOpen.value = false
 })
 
-function open() {
+function open():boolean {
   return (isOpen.value = true)
 }
-function close() {
+function close():boolean {
   return (isOpen.value = false)
 }
 </script>

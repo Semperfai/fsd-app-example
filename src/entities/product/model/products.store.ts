@@ -1,18 +1,39 @@
-import { apiInstance } from '@/shared/api/local'
-import { defineStore } from 'pinia'
-import { computed, ref } from 'vue'
-const BASE_URL = 'products'
+import { type ProductDto } from './../api/types';
+import { defineStore } from 'pinia';
+import { getProductsList , getProductById  } from '../api/productApi';
+import { type GetProductByIdParams  } from '../api/productApi';
+import { ref } from 'vue';
 
-export const useCounterStore = defineStore('products', () => {
-  const products = ref([])
+export const useProductsStore = defineStore('products', () => {
+  const isProductLoading = ref<boolean>(false)
+  const productsList = ref<ProductDto[]>([])
+  const productById = ref<ProductDto | null>(null);
 
-  const addToProducts = (product: any) => {
-    products.value.push(product)
+  async function getProductListAsync (params:any){
+    isProductLoading.value = true
+    try {
+        const { data } = await getProductsList(params)
+        productsList.value = [ ...productsList.value, ...data]
+    } finally {
+    isProductLoading.value = false
+    }
   }
-  const setProducts = () => {}
-
-  const getProducts = (params) => {
-    const { data } = apiInstance.get(BASE_URL, { params })
+  
+  async function getProductByIdAsync({productId,...params}:GetProductByIdParams) {
+    isProductLoading.value = true
+    try {
+        const { data } = await getProductById({productId,...params })
+        productById.value = data
+    } finally {
+    isProductLoading.value = false
+    }
   }
-  return {}
-})
+
+  return {
+    getProductListAsync,
+    getProductByIdAsync,
+    productsList,
+    productById  
+  };
+});
+

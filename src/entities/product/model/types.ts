@@ -1,15 +1,17 @@
+import { type VideoPresentationSrc } from './../api/types';
 export type ProductId = Brand<Id, 'ProductId'>
 
 export type Product = {
   id: ProductId
-  price: number
-  name: string
+  price: Penny
+  oldPrice: Penny
+  label: string
   popular: boolean
-  discountPercentage: number
-  starRating: number
+  discount: number
+  raiting: number
   inStock: boolean
   description: string
   reviewes: number
-  imgUrl: string[]
-  videoPresentationUrls: Record<string, string>
+  images: Url[]
+  videoPresentationSrc: VideoPresentationSrc
 }

@@ -3,9 +3,19 @@ import IconBrandLogo from './IconBrandLogo.vue'
 import IconShoppingCart from './IconShoppingCart.vue'
 import IconSearch from './IconSearch.vue'
 import IconStar from './IconStar.vue'
+import IconPlay from './IconPlay.vue'
+import IconPause from './IconPause.vue'
+import IconVolumeMute from './IconVolumeMute.vue'
+import IconVolumeUnmute from './IconVolumeUnmute.vue'
+import IconSettings from './IconSettings.vue'
 
 export { IconProfile }
 export { IconBrandLogo }
 export { IconSearch }
 export { IconShoppingCart }
+export { IconPlay }
+export { IconPause }
+export { IconVolumeUnmute }
+export { IconVolumeMute }
 export { IconStar }
+export { IconSettings }
