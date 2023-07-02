@@ -17,7 +17,7 @@ const testCircularText = ref<string>('Read Beats Ml9c2zm/a')
       />
       <img
         class="mb-9 aspect-square max-w-xs max-h-72"
-        src="../LatestProductSection/assets/images/image 6.png"
+        src="../LatestProductSection/assets/images/prod.png"
         alt="latest product"
       />
       <p class="lg:text-3xl text-2xl font-semibold">$50</p>

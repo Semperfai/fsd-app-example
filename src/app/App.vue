@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AOS from 'aos'
-import { startApiMockWorker } from './apiMockWorker.ts'
+import { startApiMockWorker } from './apiMockWorker'
 import { Routing } from '@/pages/routing'
 import { DefaultLayout } from './layouts'
 import { onMounted } from 'vue'
