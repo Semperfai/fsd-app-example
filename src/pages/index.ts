@@ -1,5 +1,4 @@
 import type { RouteRecordRaw } from 'vue-router'
-import RegisterPage from './register/ui/RegisterPage.vue'
 
 export const routes: Array<RouteRecordRaw> = [
   {
@@ -10,6 +9,26 @@ export const routes: Array<RouteRecordRaw> = [
   {
     path: '/register',
     name: 'register',
-    component: () => import('./register/ui/RegisterPage.vue')
+    component: () => import('./register/index')
+  },
+  {
+    path: '/features',
+    name: 'features',
+    component: () => import('./features/FeaturesPage.vue')
+  },
+  {
+    path: '/products',
+    name: 'products',
+    component: () => import('./products/ProductsPage.vue')
+  },
+  {
+    path: '/blog',
+    name: 'blog',
+    component: () => import('./blog/BlogPage.vue')
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('./about/AboutPage.vue')
   }
 ]

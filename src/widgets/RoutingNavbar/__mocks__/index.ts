@@ -3,22 +3,27 @@ import { type Navlinks } from '../types'
 export const navlinksMock: Navlinks[] = [
   {
     id: '1',
+    title: 'Home ',
+    to: '/'
+  },
+  {
+    id: '2',
     title: 'Features ',
-    to: '#'
+    to: '/features'
   },
   {
-    id: '1',
+    id: '3',
     title: 'Products ',
-    to: '#'
+    to: '/products'
   },
   {
-    id: '1',
+    id: '4',
     title: 'Blog ',
-    to: '#'
+    to: '/blog'
   },
   {
-    id: '1',
+    id: '5',
     title: 'About ',
-    to: '#'
+    to: '/about'
   }
 ]

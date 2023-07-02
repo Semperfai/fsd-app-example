@@ -45,9 +45,9 @@ watch([open, breakpoints], ([open, breakpoints]) => {
 <template>
   <BaseContainer>
     <div class="flex justify-between items-center lg:py-16 py-8">
-      <a href="/">
+      <router-link to="/">
         <IconBrandLogo class="lg:w-max w-28" />
-      </a>
+      </router-link>
       <HeaderMenu class="ml-6 sm:ml-5" />
       <BurgerButton ref="burgerBtn" @click="showBurgerMenu" :open="open" class="ml-8 md:hidden" />
     </div>
