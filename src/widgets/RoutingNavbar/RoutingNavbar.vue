@@ -8,9 +8,8 @@ const activePage = (path: string) => {
 }
 </script>
 <template>
-  <div class="md:flex justify-center items-center py-7 gap-20 bg-primary-1 text-white hidden">
     <nav>
-        <ul>
+        <ul class="md:flex justify-center items-center py-7 gap-20 bg-primary-1 text-white hidden">
           <li v-for="{ id, title, to } in navlinksMock" :key="id">
             <router-link
               :to="to"
@@ -22,5 +21,4 @@ const activePage = (path: string) => {
           </li>
         </ul>
       </nav>
-  </div>
 </template>
