@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { BaseContainer } from '@/shared'
-import { BurgerButton } from '@/shared'
-import { IconBrandLogo } from '@/shared'
-import { ResponsiveNavbar } from '@/widgets'
+import { BaseContainer } from '@/shared/ui/BaseContainer'
+import { BurgerButton } from '@/shared/ui/BurgerButton'
+import { IconBrandLogo } from '@/shared/ui/Icons'
+import { ResponsiveNavbar } from '@/widgets/ResponsiveNavbar'
 import { HeaderMenu } from '../HeaderMenu'
 import { ref, onMounted, watch } from 'vue'
 import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints'

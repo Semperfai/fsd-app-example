@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { IconStar } from '@/shared'
-import { CircularText } from '@/shared'
+import { IconStar } from '@/shared/ui/Icons'
+import { CircularText } from '@/shared/ui/CircularText'
 import { ref } from 'vue'
 const testCircularText = ref<string>('Read Beats Ml9c2zm/a')
 </script>

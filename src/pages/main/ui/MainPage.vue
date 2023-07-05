@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { MainHeader } from '@/widgets'
-import { MainFooter } from '@/widgets'
-import { RoutingNavbar } from '@/widgets'
-import { LatestProductSection } from '@/widgets'
+import { MainHeader } from '@/widgets/MainHeader'
+import { MainFooter } from '@/widgets/MainFooter'
+import { RoutingNavbar } from '@/widgets/RoutingNavbar'
+import { LatestProductSection } from '@/widgets/LatestProductsSection'
 </script>
 <template>
   <MainHeader />

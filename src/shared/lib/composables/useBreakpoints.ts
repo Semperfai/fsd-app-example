@@ -1,7 +1,7 @@
 import { ref, computed } from 'vue'
-import { type Breakpoints } from '@/shared/types'
+import { BREAKPOINTS } from '@/shared/constants/Breackpoints'
 
-export const useBreakpoints = (): Breakpoints => {
+export const useBreakpoints = () => {
   const viewportWidth = ref(window.innerWidth)
 
   window.addEventListener('resize', () => {
@@ -9,11 +9,11 @@ export const useBreakpoints = (): Breakpoints => {
   })
 
   return computed(() => ({
-    isXxs: viewportWidth.value < 499,
-    isXs: viewportWidth.value < 640,
-    isSm: viewportWidth.value >= 730,
-    isMd: viewportWidth.value >= 850,
-    isLg: viewportWidth.value >= 1024,
-    isXl: viewportWidth.value >= 1280
+    isXxs: viewportWidth.value < BREAKPOINTS.XXS,
+    isXs: viewportWidth.value < BREAKPOINTS.XS,
+    isSm: viewportWidth.value >= BREAKPOINTS.SM,
+    isMd: viewportWidth.value >= BREAKPOINTS.MD,
+    isLg: viewportWidth.value >= BREAKPOINTS.LG,
+    isXl: viewportWidth.value >= BREAKPOINTS.XL
   }))
 }

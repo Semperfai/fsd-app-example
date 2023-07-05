@@ -1,5 +1,0 @@
-export * from './MainFooter'
-export * from './MainHeader'
-export * from './RoutingNavbar'
-export * from './ResponsiveNavbar'
-export * from './LatestProductsSection'
