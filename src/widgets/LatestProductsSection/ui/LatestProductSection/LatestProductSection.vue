@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { BaseButton } from '@/shared/ui/BaseButton'
-import { Spinner } from '@/shared/ui/Spinner'
+import { BaseButton } from '@/shared/ui'
+import { Spinner } from '@/shared/ui'
 import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints'
 import { VideoViewerButton } from '@/features/video/videoViewer'
 import { VideoViewerPlayer } from '@/features/video/videoViewer'

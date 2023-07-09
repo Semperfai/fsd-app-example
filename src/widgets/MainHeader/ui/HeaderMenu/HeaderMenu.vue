@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { IconSearch } from '@/shared/ui/Icons'
-import { IconProfile } from '@/shared/ui/Icons'
-import { IconShoppingCart } from '@/shared/ui/Icons'
-import { BaseInput } from '@/shared/ui/BaseInput'
-import { BaseButton } from '@/shared/ui/BaseButton'
+import { IconSearch } from '@/shared/ui'
+import { IconProfile } from '@/shared/ui'
+import { IconShoppingCart } from '@/shared/ui'
+import { BaseInput } from '@/shared/ui'
+import { BaseButton } from '@/shared/ui'
 import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints'
 import { ref } from 'vue'
 const breakpoints = useBreakpoints()

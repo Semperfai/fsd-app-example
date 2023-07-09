@@ -1,4 +1,4 @@
-import { type mobNavlinks } from '../types'
+import { type mobNavlinks } from '../ui/ResponsiveNavbar/types'
 
 export const navlinksMock: mobNavlinks[] = [
   {

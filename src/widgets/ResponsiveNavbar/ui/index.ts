@@ -1,1 +1,2 @@
-export * from './ButtonClose'
+import ResponsiveNavbar from './ResponsiveNavbar/ResponsiveNavbar.vue'
+export { ResponsiveNavbar }

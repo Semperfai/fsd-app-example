@@ -10,7 +10,7 @@ withDefaults(defineProps<Partial<Props>>(), {
 <template>
   <label
     :for="buttonId"
-    class="flex flex-col flex-[1_1_20%] self-end justify-center items-center animate-bounce sm:animate-none cursor-pointer"
+    class="flex flex-col flex-[1_1_20%] self-end justify-center items-center animate-bounce cursor-pointer"
   >
     <div class="relative overflow-hidden lg:mb-5 mb-3 lg:w-20 lg:h-20 w-16 h-16 rounded-full">
       <img

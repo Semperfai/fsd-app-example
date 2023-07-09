@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BaseButton } from '../BaseButton'
+import { BaseButton } from '@/shared/ui'
 import { ref } from 'vue'
 import { type Props } from './types'
 import { generateUniqueID } from '@/shared/lib/helpers/generateUniqueId'

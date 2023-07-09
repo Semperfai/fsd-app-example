@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { BaseContainer } from '@/shared/ui/BaseContainer'
-import { BurgerButton } from '@/shared/ui/BurgerButton'
-import { IconBrandLogo } from '@/shared/ui/Icons'
+import { BaseContainer } from '@/shared/ui'
+import { BurgerButton } from '@/shared/ui'
+import { IconBrandLogo } from '@/shared/ui'
 import { ResponsiveNavbar } from '@/widgets/ResponsiveNavbar'
 import { HeaderMenu } from '../HeaderMenu'
 import { ref, onMounted, watch } from 'vue'

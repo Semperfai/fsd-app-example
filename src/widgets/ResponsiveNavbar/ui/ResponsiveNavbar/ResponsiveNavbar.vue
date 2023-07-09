@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { IconSearch } from '@/shared/ui/Icons'
-import { IconProfile } from '@/shared/ui/Icons'
-import { IconShoppingCart } from '@/shared/ui/Icons'
-import { ButtonClose } from './ui'
-import { BaseButton } from '@/shared/ui/BaseButton'
-import { BaseInput } from '@/shared/ui/BaseInput'
-import { navlinksMock } from './__mocks__'
+import { IconSearch } from '@/shared/ui'
+import { IconProfile } from '@/shared/ui'
+import { IconShoppingCart } from '@/shared/ui'
+import { BaseButton } from '@/shared/ui'
+import { BaseInput } from '@/shared/ui'
+import { navlinksMock } from '../../__mocks__/mobNavlinks'
 import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints'
 import { type Props } from './types'
 
@@ -14,10 +13,9 @@ const breakpoints = useBreakpoints()
 </script>
 <template>
   <div
-    class="fixed flex flex-col bg-white top-14 right-2 rounded-lg z-20 px-3 py-4 h-96 md:hidden"
+    class="fixed flex flex-col bg-white top-8 right-2 rounded-lg z-20 px-3 py-4 h-96 md:hidden"
     :class="{ 'min-w-[320px]': !breakpoints.isXxs }"
   >
-    <ButtonClose class="self-end mb-3" :method="showMethod" />
     <div class="flex flex-col justify-start items-center gap-6">
       <nav v-for="{ id, title, to } in navlinksMock" :key="id">
         <router-link :to="to">

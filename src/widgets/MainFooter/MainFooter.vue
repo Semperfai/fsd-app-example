@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BaseContainer } from '@/shared/ui/BaseContainer'
+import { BaseContainer } from '@/shared/ui'
 </script>
 <template>
   <footer>

@@ -1,4 +1,4 @@
-import { type Navlinks } from '../types'
+import { type Navlinks } from '../ui/RoutingNavbar/types'
 
 export const navlinksMock: Navlinks[] = [
   {

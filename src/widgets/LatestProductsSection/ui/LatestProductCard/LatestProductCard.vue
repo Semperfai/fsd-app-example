@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { IconStar } from '@/shared/ui/Icons'
-import { CircularText } from '@/shared/ui/CircularText'
+import { IconStar } from '@/shared/ui'
+import { CircularText } from '@/shared/ui'
 import { ref } from 'vue'
 const testCircularText = ref<string>('Read Beats Ml9c2zm/a')
 </script>
@@ -16,7 +16,7 @@ const testCircularText = ref<string>('Read Beats Ml9c2zm/a')
         class="lg:w-80 lg:text-xs font-semibold sm:text-[10px] text-[8px]"
       />
       <img
-        class="mb-9 aspect-square max-w-xs max-h-72"
+        class="mb-9 aspect-square max-h-72 max-w-[90%] md:max-w-full"
         src="../LatestProductSection/assets/images/prod.png"
         alt="latest product"
       />

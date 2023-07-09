@@ -1,2 +1,1 @@
-import ResponsiveNavbar from './ResponsiveNavbar.vue'
-export { ResponsiveNavbar }
+export * from './ui'
