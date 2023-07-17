@@ -3,7 +3,7 @@ import { BaseContainer } from '@/shared/ui'
 import { BurgerButton } from '@/shared/ui'
 import { IconBrandLogo } from '@/shared/ui'
 import { ResponsiveNavbar } from '@/widgets/ResponsiveNavbar'
-import { HeaderMenu } from '../HeaderMenu'
+import { MainHeaderMenu } from '../MainHeaderMenu'
 import { ref, onMounted, watch } from 'vue'
 import { useBreakpoints } from '@/shared/lib/composables/useBreakpoints'
 
@@ -48,7 +48,7 @@ watch([open, breakpoints], ([open, breakpoints]) => {
       <router-link to="/">
         <IconBrandLogo class="lg:w-max w-28" />
       </router-link>
-      <HeaderMenu class="ml-6 sm:ml-5" />
+      <MainHeaderMenu class="ml-6 sm:ml-5" />
       <BurgerButton ref="burgerBtn" @click="showBurgerMenu" :open="open" class="ml-8 md:hidden" />
     </div>
     <Transition
