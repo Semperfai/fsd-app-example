@@ -1,13 +1,13 @@
 import { describe, test, expect } from 'vitest'
-import HeaderMenu from './HeaderMenu.vue'
+import MainHeaderMenu from './MainHeaderMenu.vue'
 
 describe('base component test', () => {
   test('normal imports as expected', async () => {
-    const cmp = await import('./HeaderMenu.vue')
+    const cmp = await import('./MainHeaderMenu.vue')
     expect(cmp).toBeDefined()
   })
 
   test('mount component', async () => {
-    expect(HeaderMenu).toBeTruthy()
+    expect(MainHeaderMenu).toBeTruthy()
   })
 })
