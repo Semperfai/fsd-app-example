@@ -13,10 +13,10 @@ const breakpoints = useBreakpoints()
 </script>
 <template>
   <div
-    class="fixed flex flex-col bg-white top-8 right-2 rounded-lg z-20 px-3 py-4 h-96 md:hidden"
+    class="fixed right-2 top-8 z-20 flex h-96 flex-col rounded-lg bg-white px-3 py-4 md:hidden"
     :class="{ 'min-w-[320px]': !breakpoints.isXxs }"
   >
-    <div class="flex flex-col justify-start items-center gap-6">
+    <div class="flex flex-col items-center justify-start">
       <nav v-for="{ id, title, to } in navlinksMock" :key="id">
         <router-link :to="to">
           {{ title }}
